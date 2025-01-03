@@ -14,5 +14,11 @@ public class ContactInfo {
     @ElementCollection
     private List<String> emails;
 
+  /*
+    // Không thể chứa 1 embeddable collection mà embeddable đó lại chứa tiếp 1 collection nữa
+    // Sẽ gây lỗi ngay
+    @ElementCollection
+    private List<Address> emails;*/
+
 }
 
