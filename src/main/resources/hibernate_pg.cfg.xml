@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.implicit_naming_strategy">
+            org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl
+        </property>
+
+        <!-- Cấu hình kết nối cơ sở dữ liệu PostgreSQL -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/test-hibernate</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">password</property>
+
+        <!-- Hibernate Dialect for PostgreSQL -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
+        <!-- Tạo và xóa bảng tự động -->
+        <!--        <property name="hibernate.hbm2ddl.auto">update</property>-->
+        <property name="hibernate.hbm2ddl.auto">create-drop</property>
+
+        <!-- Hiển thị SQL trên console -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <!-- Mapping classes -->
+        <!-- <mapping class="entities.attributeOverride.Product"/>
+         <mapping class="entities.Task"/>
+         <mapping class="entities.Person"/>
+         <mapping class="entities.School"/>
+         <mapping class="entities.User"/>-->
+        <!--        <mapping class="entities.Savings"/>-->
+        <!--        <mapping class="entities.attributeOverride.Book"/>-->
+
+        <!-- associationOverride -->
+<!--        <mapping class="entities.associationOverride.Book"/>-->
+<!--        <mapping class="entities.associationOverride.Country"/>-->
+
+        <!--embeddedable collection-->
+<!--        <mapping class="entities.embeddablecollection.Person"/>-->
+
+        <!--embeddedable collection map key type-->
+<!--        <mapping class="entities.embeddedableMapKey.TouristGuide"/>-->
+
+<!--        <mapping class="entities.embeddableIdentifier.Order"/>-->
+
+       <!-- <mapping class="entities.targetMapping.City"/>-->
+
+<!--        <mapping class="entities.parentMapping.City"/>-->
+
+<!--        <mapping class="entities.embeddableInstantiator.Person"/>-->
+
+        <!--<mapping class="entities.compositeUserType.Person"/>-->
+
+        <!--<mapping class="entities.embeddableAndImplicitNamingStrategyComponentPathImpl.Book"/>
+        <mapping class="entities.embeddableAndImplicitNamingStrategyComponentPathImpl.Country"/>
+-->
+        <!--<mapping class="entities.struct.StructHolder"/>-->
+
+        <mapping class="entities.embeddedCollectionInCollection.Person"/>
+    </session-factory>
+</hibernate-configuration>
