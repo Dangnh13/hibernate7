@@ -62,12 +62,15 @@
         <!--<mapping class="entities.embeddedCollectionInCollection.Person"/>-->
 
         <!--Test equal and hashcode -->
-        <mapping class="entities.problemHashCodeAndEquals.Book"/>
+       <!-- <mapping class="entities.problemHashCodeAndEquals.Book"/>-->
 
         <!-- Subselect and Synchronize  -->
-        <mapping class="entities.subselect.Client"/>
+       <!-- <mapping class="entities.subselect.Client"/>
         <mapping class="entities.subselect.Account"/>
         <mapping class="entities.subselect.AccountTransaction"/>
-        <mapping class="entities.subselect.AccountSummary"/>
+        <mapping class="entities.subselect.AccountSummary"/>-->
+
+        <!-- IdClass -->
+        <mapping class="entities.idClassExample.Order"/>
     </session-factory>
 </hibernate-configuration>
