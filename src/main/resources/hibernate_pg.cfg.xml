@@ -77,7 +77,11 @@
 <!--        <mapping class="entities.idClassWithManyToOne.Subsystem"/>-->
 <!--        <mapping class="entities.idClassWithManyToOne.SystemUser"/>-->
 
-        <!--  idClassWithPartialGeneration      -->
-        <mapping class="entities.idClassWithPartialGeneration.SystemUser"/>
+<!--        &lt;!&ndash;  idClassWithPartialGeneration      &ndash;&gt;-->
+<!--        <mapping class="entities.idClassWithPartialGeneration.SystemUser"/>-->
+
+        <!--  Embeddable with  manyToOne     -->
+        <mapping class="entities.embeddedId.withManytoOne.Subsystem"/>
+        <mapping class="entities.embeddedId.withManytoOne.SystemUser"/>
     </session-factory>
 </hibernate-configuration>
