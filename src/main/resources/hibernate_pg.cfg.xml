@@ -80,8 +80,14 @@
 <!--        &lt;!&ndash;  idClassWithPartialGeneration      &ndash;&gt;-->
 <!--        <mapping class="entities.idClassWithPartialGeneration.SystemUser"/>-->
 
-        <!--  Embeddable with  manyToOne     -->
-        <mapping class="entities.embeddedId.withManytoOne.Subsystem"/>
-        <mapping class="entities.embeddedId.withManytoOne.SystemUser"/>
+<!--        &lt;!&ndash;  Embeddable with  manyToOne     &ndash;&gt;-->
+<!--        <mapping class="entities.embeddedId.withManytoOne.Subsystem"/>-->
+<!--        <mapping class="entities.embeddedId.withManytoOne.SystemUser"/>-->
+
+
+        <!--        compositeIdentifier-->
+        <mapping class="entities.compositeIdentifier.Author"/>
+        <mapping class="entities.compositeIdentifier.Publisher"/>
+        <mapping class="entities.compositeIdentifier.Book"/>
     </session-factory>
 </hibernate-configuration>
