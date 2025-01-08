@@ -35,22 +35,22 @@
         <!--        <mapping class="entities.attributeOverride.Book"/>-->
 
         <!-- associationOverride -->
-<!--        <mapping class="entities.associationOverride.Book"/>-->
-<!--        <mapping class="entities.associationOverride.Country"/>-->
+        <!--        <mapping class="entities.associationOverride.Book"/>-->
+        <!--        <mapping class="entities.associationOverride.Country"/>-->
 
         <!--embeddedable collection-->
-<!--        <mapping class="entities.embeddablecollection.Person"/>-->
+        <!--        <mapping class="entities.embeddablecollection.Person"/>-->
 
         <!--embeddedable collection map key type-->
-<!--        <mapping class="entities.embeddedableMapKey.TouristGuide"/>-->
+        <!--        <mapping class="entities.embeddedableMapKey.TouristGuide"/>-->
 
-<!--        <mapping class="entities.embeddableIdentifier.Order"/>-->
+        <!--        <mapping class="entities.embeddableIdentifier.Order"/>-->
 
-       <!-- <mapping class="entities.targetMapping.City"/>-->
+        <!-- <mapping class="entities.targetMapping.City"/>-->
 
-<!--        <mapping class="entities.parentMapping.City"/>-->
+        <!--        <mapping class="entities.parentMapping.City"/>-->
 
-<!--        <mapping class="entities.embeddableInstantiator.Person"/>-->
+        <!--        <mapping class="entities.embeddableInstantiator.Person"/>-->
 
         <!--<mapping class="entities.compositeUserType.Person"/>-->
 
@@ -62,15 +62,19 @@
         <!--<mapping class="entities.embeddedCollectionInCollection.Person"/>-->
 
         <!--Test equal and hashcode -->
-       <!-- <mapping class="entities.problemHashCodeAndEquals.Book"/>-->
+        <!-- <mapping class="entities.problemHashCodeAndEquals.Book"/>-->
 
         <!-- Subselect and Synchronize  -->
-       <!-- <mapping class="entities.subselect.Client"/>
-        <mapping class="entities.subselect.Account"/>
-        <mapping class="entities.subselect.AccountTransaction"/>
-        <mapping class="entities.subselect.AccountSummary"/>-->
+        <!-- <mapping class="entities.subselect.Client"/>
+         <mapping class="entities.subselect.Account"/>
+         <mapping class="entities.subselect.AccountTransaction"/>
+         <mapping class="entities.subselect.AccountSummary"/>-->
 
         <!-- IdClass -->
-        <mapping class="entities.idClassExample.Order"/>
+        <!--        <mapping class="entities.idClassExample.Order"/>-->
+
+        <!--  Idclass with manytoOne      -->
+        <mapping class="entities.idClassWithManyToOne.Subsystem"/>
+        <mapping class="entities.idClassWithManyToOne.SystemUser"/>
     </session-factory>
 </hibernate-configuration>
