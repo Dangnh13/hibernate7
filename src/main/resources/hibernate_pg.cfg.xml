@@ -73,8 +73,11 @@
         <!-- IdClass -->
         <!--        <mapping class="entities.idClassExample.Order"/>-->
 
-        <!--  Idclass with manytoOne      -->
-        <mapping class="entities.idClassWithManyToOne.Subsystem"/>
-        <mapping class="entities.idClassWithManyToOne.SystemUser"/>
+<!--        &lt;!&ndash;  Idclass with manytoOne      &ndash;&gt;-->
+<!--        <mapping class="entities.idClassWithManyToOne.Subsystem"/>-->
+<!--        <mapping class="entities.idClassWithManyToOne.SystemUser"/>-->
+
+        <!--  idClassWithPartialGeneration      -->
+        <mapping class="entities.idClassWithPartialGeneration.SystemUser"/>
     </session-factory>
 </hibernate-configuration>
