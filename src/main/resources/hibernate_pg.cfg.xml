@@ -86,8 +86,14 @@
 
 
         <!--        compositeIdentifier-->
-        <mapping class="entities.compositeIdentifier.Author"/>
-        <mapping class="entities.compositeIdentifier.Publisher"/>
-        <mapping class="entities.compositeIdentifier.Book"/>
+<!--        <mapping class="entities.compositeIdentifier.Author"/>-->
+<!--        <mapping class="entities.compositeIdentifier.Publisher"/>-->
+<!--        <mapping class="entities.compositeIdentifier.Book"/>-->
+
+<!--        &lt;!&ndash; Named sequence &ndash;&gt;-->
+<!--        <mapping class="entities.namedSequence.Product"/>-->
+
+        <!-- sequence generator annotation-->
+        <mapping class="entities.sequenceGeneratorAnnotation.Product"/>
     </session-factory>
 </hibernate-configuration>
