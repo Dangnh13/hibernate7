@@ -94,6 +94,10 @@
 <!--        <mapping class="entities.namedSequence.Product"/>-->
 
         <!-- sequence generator annotation-->
-        <mapping class="entities.sequenceGeneratorAnnotation.Product"/>
+<!--        <mapping class="entities.sequenceGeneratorAnnotation.Product"/>-->
+
+<!--        Unnamed table generator-->
+        <mapping class="entities.unnamedTableGenerator.Product"/>
+        <mapping class="entities.unnamedTableGenerator.People"/>
     </session-factory>
 </hibernate-configuration>
