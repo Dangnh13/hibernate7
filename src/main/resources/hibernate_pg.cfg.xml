@@ -104,7 +104,15 @@
 <!--        <mapping class="entities.customSequenceGenerator.Book"/>-->
 
 <!--        derived Identifiers -->
-        <mapping class="entities.derivedIdentifiers.Person"/>
-        <mapping class="entities.derivedIdentifiers.PersonDetails"/>
+<!--        <mapping class="entities.derivedIdentifiers.Person"/>-->
+<!--        <mapping class="entities.derivedIdentifiers.PersonDetails"/>-->
+
+<!--        associations.manyToOne -->
+<!--        <mapping class="entities.associations.manyToOne.Person"/>-->
+<!--        <mapping class="entities.associations.manyToOne.Phone"/>-->
+
+<!--        oneToMany.unidirectional-->
+        <mapping class="entities.associations.oneToMany.unidirectional.Person"/>
+        <mapping class="entities.associations.oneToMany.unidirectional.Phone"/>
     </session-factory>
 </hibernate-configuration>
