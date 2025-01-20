@@ -97,7 +97,14 @@
 <!--        <mapping class="entities.sequenceGeneratorAnnotation.Product"/>-->
 
 <!--        Unnamed table generator-->
-        <mapping class="entities.unnamedTableGenerator.Product"/>
-        <mapping class="entities.unnamedTableGenerator.People"/>
+<!--        <mapping class="entities.unnamedTableGenerator.Product"/>-->
+<!--        <mapping class="entities.unnamedTableGenerator.People"/>-->
+
+<!--     customSequenceGenerator   -->
+<!--        <mapping class="entities.customSequenceGenerator.Book"/>-->
+
+<!--        derived Identifiers -->
+        <mapping class="entities.derivedIdentifiers.Person"/>
+        <mapping class="entities.derivedIdentifiers.PersonDetails"/>
     </session-factory>
 </hibernate-configuration>
