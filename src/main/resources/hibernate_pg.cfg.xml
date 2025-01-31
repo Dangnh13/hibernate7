@@ -112,7 +112,19 @@
 <!--        <mapping class="entities.associations.manyToOne.Phone"/>-->
 
 <!--        oneToMany.unidirectional-->
-        <mapping class="entities.associations.oneToMany.unidirectional.Person"/>
-        <mapping class="entities.associations.oneToMany.unidirectional.Phone"/>
+<!--        <mapping class="entities.associations.oneToMany.unidirectional.Person"/>-->
+<!--        <mapping class="entities.associations.oneToMany.unidirectional.Phone"/>-->
+
+<!--        oneToMany.bidirectional-->
+<!--        <mapping class="entities.associations.oneToMany.bidirectional.Person"/>-->
+<!--        <mapping class="entities.associations.oneToMany.bidirectional.Phone"/>-->
+
+        <!--        oneToOne.undirectional-->
+<!--                <mapping class="entities.associations.oneToOne.unidirectional.PhoneDetails"/>-->
+<!--                <mapping class="entities.associations.oneToOne.unidirectional.Phone"/>-->
+
+        <!--oneToOne.bidirectional-->
+            <mapping class="entities.associations.oneToOne.bidirectional.PhoneDetails"/>
+            <mapping class="entities.associations.oneToOne.bidirectional.Phone"/>
     </session-factory>
 </hibernate-configuration>
