@@ -136,8 +136,12 @@
 <!--              <mapping class="entities.associations.manyToMany.bidirectional.Person"/>-->
 
         <!--        Link Entity-->
-        <mapping class="entities.associations.manyToMany.bidirectional.linkEntity.Address"/>
-        <mapping class="entities.associations.manyToMany.bidirectional.linkEntity.Person"/>
-        <mapping class="entities.associations.manyToMany.bidirectional.linkEntity.PersonAddress"/>
+<!--        <mapping class="entities.associations.manyToMany.bidirectional.linkEntity.Address"/>-->
+<!--        <mapping class="entities.associations.manyToMany.bidirectional.linkEntity.Person"/>-->
+<!--        <mapping class="entities.associations.manyToMany.bidirectional.linkEntity.PersonAddress"/>-->
+
+<!--        associations.notFound-->
+        <mapping class="entities.associations.notFound.City"/>
+        <mapping class="entities.associations.notFound.Person"/>
     </session-factory>
 </hibernate-configuration>

@@ -1,11 +1,7 @@
 package test_l1;
 
-import entities.Savings;
-import entities.associationOverride.Book;
-import entities.associationOverride.Country;
-import entities.associationOverride.Publisher;
-import entities.associations.manyToOne.Person;
-import entities.associations.manyToOne.Phone;
+import entities.associations.notFound.City;
+import entities.associations.notFound.Person;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.junit.jupiter.api.AfterAll;
@@ -14,9 +10,10 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import util.HibernateUtil;
 
+import java.util.Arrays;
 import java.util.List;
 
-public class TestAssociationManyToOne {
+public class TestAssociationNotFound {
 
     @BeforeAll
     public static void setup() {
@@ -39,28 +36,29 @@ public class TestAssociationManyToOne {
     public void test() {
         Session session = HibernateUtil.getSessionFactory().openSession();
         Transaction tx = session.beginTransaction();
-
-        Person person = new Person();
-        person.setUname("Ngo hai dang");
-        session.persist(person);
-
-        Phone phone = new Phone();
-        phone.setNumber("0978534865");
-        phone.setPerson(person);
-        session.persist(phone);
-
-        Phone phoneMy = new Phone();
-        phoneMy.setNumber("0399964816");
-        phoneMy.setPerson(person);
-        session.persist(phoneMy);
-
+        City city = new City();
+        city.setName("HN");
+        session.persist(city);
+        var p =new Person();
+        p.setName("DangnH");
+        p.setCity(city);
+        session.persist(p);
         tx.commit();
 
-        // Read
-        session = HibernateUtil.getSessionFactory().openSession();
-        List<Phone> list = session.createQuery("from Phone", Phone.class).list();
+        var list = session.createQuery("from Person", Person.class).list();
+        System.out.println(list.size());
+
+        session.close();
+
+         session = HibernateUtil.getSessionFactory().openSession();
+        tx = session.beginTransaction();
+        city = session.find(City.class, 1l);
+        session.remove(city);
+        tx.commit();
+        list = session.createQuery("from Person", Person.class).list();
         System.out.println(list.size());
         session.close();
+
     }
 
 }
