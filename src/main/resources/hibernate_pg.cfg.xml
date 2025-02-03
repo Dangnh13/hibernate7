@@ -141,7 +141,13 @@
 <!--        <mapping class="entities.associations.manyToMany.bidirectional.linkEntity.PersonAddress"/>-->
 
 <!--        associations.notFound-->
-        <mapping class="entities.associations.notFound.City"/>
-        <mapping class="entities.associations.notFound.Person"/>
+<!--        <mapping class="entities.associations.notFound.City"/>-->
+<!--        <mapping class="entities.associations.notFound.Person"/>-->
+
+<!--        @any annotation-->
+        <mapping class="entities.associations.anyAnnotation.CardPayment"/>
+        <mapping class="entities.associations.anyAnnotation.CheckPayment"/>
+        <mapping class="entities.associations.anyAnnotation.PaymentHolder"/>
+
     </session-factory>
 </hibernate-configuration>
