@@ -145,9 +145,17 @@
 <!--        <mapping class="entities.associations.notFound.Person"/>-->
 
 <!--        @any annotation-->
-        <mapping class="entities.associations.anyAnnotation.CardPayment"/>
-        <mapping class="entities.associations.anyAnnotation.CheckPayment"/>
-        <mapping class="entities.associations.anyAnnotation.PaymentHolder"/>
+<!--        <mapping class="entities.associations.anyAnnotation.CardPayment"/>-->
+<!--        <mapping class="entities.associations.anyAnnotation.CheckPayment"/>-->
+<!--        <mapping class="entities.associations.anyAnnotation.PaymentHolder"/>-->
+
+<!--        JoinFormula -->
+<!--        <mapping class="entities.associations.joinFormula.Country"/>-->
+<!--        <mapping class="entities.associations.joinFormula.User"/>-->
+
+        <!--        joinColumnOrFormula -->
+        <mapping class="entities.associations.joinColumnOrFormula.Country"/>
+        <mapping class="entities.associations.joinColumnOrFormula.User"/>
 
     </session-factory>
 </hibernate-configuration>
