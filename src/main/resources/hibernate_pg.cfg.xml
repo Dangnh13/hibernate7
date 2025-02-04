@@ -154,8 +154,8 @@
 <!--        <mapping class="entities.associations.joinFormula.User"/>-->
 
         <!--        joinColumnOrFormula -->
-        <mapping class="entities.associations.joinColumnOrFormula.Country"/>
-        <mapping class="entities.associations.joinColumnOrFormula.User"/>
+<!--        <mapping class="entities.associations.joinColumnOrFormula.Country"/>-->
+<!--        <mapping class="entities.associations.joinColumnOrFormula.User"/>-->
 
     </session-factory>
 </hibernate-configuration>

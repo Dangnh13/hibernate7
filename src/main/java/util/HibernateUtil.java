@@ -14,7 +14,8 @@ public class HibernateUtil {
     static {
         try {
 //            sessionFactory = new Configuration().configure("hibernate_pg_PhysicalNamingStrategy.cfg.xml").buildSessionFactory();
-            sessionFactory = new Configuration().configure("hibernate_pg.cfg.xml").buildSessionFactory();
+//            sessionFactory = new Configuration().configure("hibernate_pg.cfg.xml").buildSessionFactory();
+            sessionFactory = new Configuration().configure("hibernate_pg_collection.cfg.xml").buildSessionFactory();
         } catch (Throwable ex) {
             throw new ExceptionInInitializerError(ex);
         }
