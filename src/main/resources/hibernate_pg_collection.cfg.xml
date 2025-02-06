@@ -27,8 +27,11 @@
 
         <!-- Mapping classes -->
         <!--        collection mapping list -->
-        <mapping class="entities.collections.mappingLists.Address"/>
-        <mapping class="entities.collections.mappingLists.Person"/>
+<!--        <mapping class="entities.collections.mappingLists.Address"/>-->
+<!--        <mapping class="entities.collections.mappingLists.Person"/>-->
+
+<!--       sortedSet -->
+        <mapping class="entities.collections.sortedSet.Person"/>
 
     </session-factory>
 </hibernate-configuration>
