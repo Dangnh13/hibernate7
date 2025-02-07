@@ -2,6 +2,7 @@ package entities.collections.sortedSet;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import org.hibernate.annotations.NaturalId;
 import org.hibernate.annotations.SortNatural;
 
 import java.util.SortedSet;
@@ -15,6 +16,7 @@ public class Person {
     @GeneratedValue
     private Long id;
 
+    @NaturalId
     private String nickname;
 
     @ElementCollection

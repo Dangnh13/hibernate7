@@ -48,8 +48,10 @@ public class TestSortedSet {
 
          session = HibernateUtil.getSessionFactory().openSession();
         // Đọc lại  từ DB
-        Person p2 = session.find(Person.class, person.getId());
-
+//        Person p2 = session.find(Person.class, person.getId());
+        Person p2 = session.byNaturalId(Person.class)
+                        .using("nickname", "dangnh")
+                                .load();
         System.out.println(p2.toString());
         session.close();
     }
