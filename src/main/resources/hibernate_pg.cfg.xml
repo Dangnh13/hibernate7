@@ -157,5 +157,6 @@
 <!--        <mapping class="entities.associations.joinColumnOrFormula.Country"/>-->
 <!--        <mapping class="entities.associations.joinColumnOrFormula.User"/>-->
 
+
     </session-factory>
 </hibernate-configuration>

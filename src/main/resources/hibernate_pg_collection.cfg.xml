@@ -31,7 +31,11 @@
 <!--        <mapping class="entities.collections.mappingLists.Person"/>-->
 
 <!--       sortedSet -->
-        <mapping class="entities.collections.sortedSet.Person"/>
+<!--        <mapping class="entities.collections.sortedSet.Person"/>-->
+
+        <!--        partition -->
+        <mapping class="entities.partition.User"/>
+
 
     </session-factory>
 </hibernate-configuration>
