@@ -34,8 +34,15 @@
 <!--        <mapping class="entities.collections.sortedSet.Person"/>-->
 
         <!--        partition -->
-        <mapping class="entities.partition.User"/>
+<!--        <mapping class="entities.partition.User"/>-->
 
+<!--        Soft delete -->
+<!--        <mapping class="entities.softDelete.User"/>-->
+
+<!--        inheritance soft delete -->
+        <mapping class="entities.softDelete.inheritance.BasePerson"/>
+        <mapping class="entities.softDelete.inheritance.Customer"/>
+        <mapping class="entities.softDelete.inheritance.Employee"/>
 
     </session-factory>
 </hibernate-configuration>
