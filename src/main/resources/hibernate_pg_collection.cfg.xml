@@ -40,9 +40,13 @@
 <!--        <mapping class="entities.softDelete.User"/>-->
 
 <!--        inheritance soft delete -->
-        <mapping class="entities.softDelete.inheritance.BasePerson"/>
-        <mapping class="entities.softDelete.inheritance.Customer"/>
-        <mapping class="entities.softDelete.inheritance.Employee"/>
+<!--        <mapping class="entities.softDelete.inheritance.BasePerson"/>-->
+<!--        <mapping class="entities.softDelete.inheritance.Customer"/>-->
+<!--        <mapping class="entities.softDelete.inheritance.Employee"/>-->
+
+<!--       inheritance -->
+        <mapping class="entities.inheritance.mappedSuperclass.CreditAccount"/>
+        <mapping class="entities.inheritance.mappedSuperclass.DebitAccount"/>
 
     </session-factory>
 </hibernate-configuration>
