@@ -35,7 +35,7 @@ public class TestInheritance {
     }
 
     @Test
-    public void test() {
+    public void testMappedSuperclass() {
         Session session = HibernateUtil.getSessionFactory().openSession();
         Transaction tx = session.beginTransaction();
         DebitAccount debitAccount = new DebitAccount();
@@ -52,6 +52,30 @@ public class TestInheritance {
 
         DebitAccount foundDebit = session.find(DebitAccount.class, debitAccount.getId());
         System.out.println(foundDebit.toString());
+        session.close();
+    }
+
+    @Test
+    public void testSingleTable() {
+        Session session = HibernateUtil.getSessionFactory().openSession();
+        Transaction tx = session.beginTransaction();
+        var debitAccount = new entities.inheritance.singleTable.DebitAccount();
+        debitAccount.setOwner("debit Account");
+        debitAccount.setOverdraftFee(new BigDecimal(1000));
+        session.persist(debitAccount);
+
+        var creditAccount = new entities.inheritance.singleTable.CreditAccount();
+        creditAccount.setOwner("credit");
+        creditAccount.setCreditLimit(new BigDecimal(2000));
+        session.persist(creditAccount);
+        tx.commit();
+        session.close();
+
+        session = HibernateUtil.getSessionFactory().openSession();
+        var foundDebit = session.find(entities.inheritance.singleTable.DebitAccount.class, debitAccount.getId());
+        var foundCre = session.find(entities.inheritance.singleTable.CreditAccount.class, creditAccount.getId());
+        System.out.println(foundDebit.toString());
+        System.out.println(foundCre.toString());
         session.close();
     }
 
