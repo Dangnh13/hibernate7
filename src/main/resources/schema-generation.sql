@@ -1,0 +1,1 @@
+select 'Dangnh-> run sql after finish create ddl';
