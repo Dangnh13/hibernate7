@@ -53,9 +53,13 @@
 <!--        <mapping class="entities.inheritance.mappedSuperclass.DebitAccount"/>-->
 
 <!--        inheritance singleTable -->
-        <mapping class="entities.inheritance.singleTable.Account"/>
-        <mapping class="entities.inheritance.singleTable.CreditAccount"/>
-        <mapping class="entities.inheritance.singleTable.DebitAccount"/>
+<!--        <mapping class="entities.inheritance.singleTable.Account"/>-->
+<!--        <mapping class="entities.inheritance.singleTable.CreditAccount"/>-->
+<!--        <mapping class="entities.inheritance.singleTable.DebitAccount"/>-->
+
+<!--        filter entities-->
+        <mapping class="entities.filter.sQLJoinTableRestriction.Book" />
+        <mapping class="entities.filter.sQLJoinTableRestriction.Reader" />
 
     </session-factory>
 </hibernate-configuration>
